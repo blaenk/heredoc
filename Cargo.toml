@@ -1,0 +1,10 @@
+[package]
+
+name = "heredoc"
+version = "0.0.1"
+authors = ["Jorge Israel Peña <jorge.israel.p@gmail.com>"]
+
+[lib]
+name = "heredoc"
+path = "src/lib.rs"
+plugin = true
