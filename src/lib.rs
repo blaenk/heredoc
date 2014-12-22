@@ -147,8 +147,6 @@ fn expand_heredoc(cx: &mut ExtCtxt, sp: Span, tts: &[TokenTree])
 
 fn expand_join(cx: &mut ExtCtxt, sp: Span, tts: &[TokenTree])
                  -> Box<MacResult + 'static> {
-  // let mut parser =
-  //   parse::new_parser_from_tts(cx.parse_sess(), cx.cfg(), tts.to_vec());
   let mut parser = cx.new_parser_from_tts(tts);
   let heredoc_expr = cx.expander().fold_expr(parser.parse_expr());
   match heredoc_expr.node {
