@@ -73,13 +73,14 @@ pub fn format(slice: &str) -> String {
     }
   }
 
-  string
+  return string;
 }
 
 #[plugin_registrar]
 #[doc(hidden)]
 pub fn registrar(reg: &mut Registry) {
   reg.register_macro("heredoc", expand_heredoc);
+  reg.register_macro("join", expand_join);
 }
 
 // notes:
