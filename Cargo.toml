@@ -5,7 +5,7 @@ version = "0.0.1"
 authors = ["Jorge Israel Peña <jorge.israel.p@gmail.com>"]
 description = "a heredoc implementation"
 repository = "https://github.com/blaenk/heredoc"
-license = "BSD"
+license = "BSD-3-Clause"
 
 [lib]
 name = "heredoc"
